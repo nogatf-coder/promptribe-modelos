@@ -1,0 +1,22 @@
+# Estilos y escenas que reconoce el asistente de Coqueta Foto (CLIP, sin entrenar: se compara la foto con frases)
+STYLES = {
+  "urban":      ["a street style fashion photo in the city", "a person wearing streetwear posing on an urban sidewalk", "an urban street photo with graffiti and shop fronts"],
+  "nightcity":  ["a photo of a person in the city at night with street lights", "a night street photo in a city"],
+  "neon":       ["a photo in a room lit with purple or pink led lights", "a party photo with colorful neon lights", "a person under red and purple colored lights"],
+  "mirror":     ["a mirror selfie holding a smartphone", "a person taking a photo of themselves in a mirror"],
+  "selfie":     ["a close up selfie of a young woman", "a close-up selfie portrait taken with a phone"],
+  "beach":      ["a photo at the beach with the sea", "a person on a sunny beach by the ocean"],
+  "nature":     ["a portrait in a forest with green trees", "a person in a park surrounded by plants and grass"],
+  "desert":     ["a person in the desert with sand dunes and blue sky", "sand dunes under a blue sky with clouds"],
+  "snow":       ["a snowy winter landscape", "a person in the snow in winter"],
+  "golden":     ["a portrait at sunset with warm golden hour light", "a backlit photo with the sun behind the person"],
+  "studio":     ["a professional studio portrait with a plain background", "a headshot in front of a plain wall"],
+  "bw":         ["a black and white photograph", "a monochrome portrait"],
+  "magical":    ["a night photo with glowing lanterns in a theme park", "a fairytale village with lanterns at dusk"],
+  "cosplay":    ["a cosplay costume photo", "a person dressed as an anime character"],
+  "food":       ["a photo of food on a plate", "a dish of food on a table"],
+  "product":    ["a product photo of an object", "a photo of an item for sale on a table"],
+  "landscape":  ["a landscape photo with no people", "a scenic view of mountains or a city skyline"],
+  "pet":        ["a photo of a cat or a dog", "a pet animal"],
+  "indoor":     ["a casual photo inside a bedroom", "a photo of a person at home indoors"],
+}
