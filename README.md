@@ -11,4 +11,11 @@ Archivos de modelos que usan las herramientas de [MyPrompTribe](https://www.mypr
 
 El codificador y el decodificador de imagen se descargan directamente de [cgb/flux2-klein-4b-onnx-webgpu](https://huggingface.co/cgb/flux2-klein-4b-onnx-webgpu).
 
-Licencia: Apache-2.0 (ver `LICENSE`), la misma de los modelos de origen.
+## `coqueta/`: borde fino del recorte de «Coqueta Foto»
+
+| Archivo | Qué es | Origen y licencia |
+| --- | --- | --- |
+| `birefnet-lite-fp16-cq.onnx`, `birefnet-lite-cq.onnx` | Solo el «mapa» (grafo) de BiRefNet lite (media precisión y completa). Los pasos que unen o parten muchos tensores a la vez (Concat de hasta 1024 entradas, Split de hasta 32 salidas) se rehacen en pasos de 7 como máximo, para que quepan en cualquier tarjeta con WebGPU (muchas solo dejan 8 búferes por paso). Los pesos apuntan a su posición dentro de `model_fp16.onnx` / `model.onnx` originales, que el navegador descarga directamente de Hugging Face. Ningún peso cambia: el resultado es idéntico. | Derivado de [onnx-community/BiRefNet_lite-ONNX](https://huggingface.co/onnx-community/BiRefNet_lite-ONNX) (revisión `de15b22`), de [ZhengPeng7/BiRefNet](https://github.com/ZhengPeng7/BiRefNet) (MIT, © 2024 ZhengPeng). |
+| `patch_graph.py` | El guion que rehace el grafo (`python patch_graph.py model_fp16.onnx salida.onnx model_fp16.onnx`). | MIT |
+
+Licencia: Apache-2.0 (ver `LICENSE`), la misma de los modelos de origen; lo de `coqueta/` es MIT, como BiRefNet (ver `coqueta/LICENSE-BiRefNet`).
