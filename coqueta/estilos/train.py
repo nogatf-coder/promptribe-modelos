@@ -44,7 +44,7 @@ for c in sorted(set(S)):
     # el brillo general depende sobre todo de la escena (de noche, de día): se quita el 75 % del desplazamiento medio y
     # se conserva la forma (contraste) y la diferencia entre canales (la dominante de color)
     shift = float(np.mean(Qs - Qn))
-    Qs = Qs - 0.75 * shift
+    Qs = Qs - 0.6 * shift
     for ch, name in enumerate('rgb'):
         xs, ys = list(Qn[ch]), list(Qs[ch])
         pts = [[0, max(0.0, ys[0] - xs[0] * (ys[1] - ys[0]) / max(1.0, xs[1] - xs[0]))]]
@@ -53,7 +53,7 @@ for c in sorted(set(S)):
         # a medias y siempre creciente
         out, last_x, last_y = [], -1, -1
         for x, yv in pts:
-            yv = x + float(np.clip(0.6 * (yv - x), -24, 24))
+            yv = x + float(np.clip(0.85 * (yv - x), -38, 38))
             if x <= last_x + 3: continue
             yv = max(yv, last_y + 0.5); out.append([round(x), round(min(255, max(0, yv)))]); last_x, last_y = x, yv
         look[name] = out
