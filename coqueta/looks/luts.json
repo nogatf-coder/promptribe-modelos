@@ -2244,7 +2244,10 @@
 0.0098,
 -0.0039,
 -0.0055
-]
+],
+"extra": "fujifilm instax instant photo",
+"extra_es": "foto instantánea instax de fujifilm",
+"extra_pt": "foto instantânea instax da fujifilm"
 },
 {
 "id": "lut107",
@@ -4071,7 +4074,10 @@
 -0.008,
 0.0011,
 0.0152
-]
+],
+"extra": "hipstamatic, iphone toy camera app",
+"extra_es": "hipstamatic, app de cámara de juguete del iphone",
+"extra_pt": "hipstamatic, app de câmera de brinquedo do iphone"
 },
 {
 "id": "lut194",
@@ -4344,7 +4350,10 @@
 0.004,
 -0.0106,
 0.0442
-]
+],
+"extra": "polaroid instant photo",
+"extra_es": "foto instantánea polaroid",
+"extra_pt": "foto instantânea polaroid"
 },
 {
 "id": "lut207",
@@ -6227,7 +6236,10 @@
 -0.0108
 ],
 "made": "t3mujinpack",
-"id": "lut294"
+"id": "lut294",
+"extra": "afterlight film filter, light leaks and dust",
+"extra_es": "filtro de película de afterlight, fugas de luz y polvo",
+"extra_pt": "filtro de filme do afterlight, vazamentos de luz e poeira"
 },
 {
 "title": "Agfa Vista 400 · t3mujin",
@@ -7150,9 +7162,9 @@
 0.0036
 ],
 "made": "Coqueta (estilo)",
-"extra": "bright and airy, light clean instagram preset, wedding lifestyle",
-"extra_es": "luminoso y aireado, claro y limpio para instagram, bodas y lifestyle",
-"extra_pt": "claro e arejado, limpo para instagram, casamento e lifestyle",
+"extra": "bright and airy, light clean instagram preset, wedding lifestyle, lightroom preset bright and airy",
+"extra_es": "luminoso y aireado, claro y limpio para instagram, bodas y lifestyle, preset de lightroom claro y aireado",
+"extra_pt": "claro e arejado, limpo para instagram, casamento e lifestyle, preset do lightroom claro e arejado",
 "id": "lut334"
 },
 {
@@ -7175,9 +7187,9 @@
 0.0218
 ],
 "made": "Coqueta (estilo)",
-"extra": "dark and moody, dramatic muted instagram preset",
-"extra_es": "oscuro y moody, dramático y apagado, preset de instagram",
-"extra_pt": "escuro e moody, dramático e suave, preset de instagram",
+"extra": "dark and moody, dramatic muted instagram preset, moody lightroom preset",
+"extra_es": "oscuro y moody, dramático y apagado, preset de instagram, preset de lightroom moody oscuro",
+"extra_pt": "escuro e moody, dramático e suave, preset de instagram, preset do lightroom moody escuro",
 "id": "lut335"
 },
 {
@@ -7325,9 +7337,9 @@
 -0.039
 ],
 "made": "Coqueta (estilo)",
-"extra": "tumblr aesthetic 2014, warm sepia faded, grunge",
-"extra_es": "estética tumblr 2014, sepia cálido desvaído",
-"extra_pt": "estética tumblr 2014, sépia quente desbotado",
+"extra": "tumblr aesthetic 2014, warm sepia faded, grunge, retrica selfie filter, tumblr selfie",
+"extra_es": "estética tumblr 2014, sepia cálido desvaído, filtro de selfie de retrica, selfie de tumblr",
+"extra_pt": "estética tumblr 2014, sépia quente desbotado, filtro de selfie do retrica, selfie do tumblr",
 "id": "lut341"
 },
 {
@@ -7350,9 +7362,9 @@
 -0.0201
 ],
 "made": "Coqueta (estilo)",
-"extra": "vsco warm clean a6 c1, soft film",
-"extra_es": "vsco cálido y limpio, tipo a6 o c1",
-"extra_pt": "vsco quente e limpo, tipo a6 ou c1",
+"extra": "vsco warm clean a6 c1, soft film, picsart filter, warm vsco filter",
+"extra_es": "vsco cálido y limpio, tipo a6 o c1, filtro de picsart, filtro cálido de vsco",
+"extra_pt": "vsco quente e limpo, tipo a6 ou c1, filtro do picsart, filtro quente do vsco",
 "id": "lut342"
 },
 {
@@ -7400,9 +7412,9 @@
 0.0128
 ],
 "made": "Coqueta (estilo)",
-"extra": "y2k digicam ccd camera, 2000s digital, cool, harsh flash",
-"extra_es": "digicam y2k, cámara ccd de los 2000, fría, flash directo",
-"extra_pt": "digicam y2k, câmera ccd dos anos 2000, fria, flash direto",
+"extra": "y2k digicam ccd camera, 2000s digital, cool, harsh flash, old photo from the 2000s, early 2000s digital camera photo, nokia, cybershot",
+"extra_es": "digicam y2k, cámara ccd de los 2000, fría, flash directo, foto vieja de los 2000, foto antigua de los años 2000, foto de cámara digital de los dos mil",
+"extra_pt": "digicam y2k, câmera ccd dos anos 2000, fria, flash direto, foto velha dos anos 2000, foto antiga dos anos 2000, foto de câmera digital dos anos 2000",
 "id": "lut344"
 },
 {
@@ -7425,9 +7437,9 @@
 -0.0127
 ],
 "made": "Coqueta (estilo)",
-"extra": "disposable camera, huji dazz, 90s dispo, green shadows",
-"extra_es": "cámara desechable, huji o dazz, dispo de los 90",
-"extra_pt": "câmera descartável, huji ou dazz, dispo dos anos 90",
+"extra": "disposable camera, huji dazz, 90s dispo, green shadows, huji, dazz, dispo app, disposable camera app",
+"extra_es": "cámara desechable, huji o dazz, dispo de los 90, huji, dazz, app dispo, app de cámara desechable",
+"extra_pt": "câmera descartável, huji ou dazz, dispo dos anos 90, huji, dazz, app dispo, app de câmera descartável",
 "id": "lut345"
 },
 {
@@ -7475,9 +7487,9 @@
 0.0263
 ],
 "made": "Coqueta (estilo)",
-"extra": "korean pastel soft aesthetic, bright hazy, kpop",
-"extra_es": "coreano pastel, suave y brillante, estilo kpop",
-"extra_pt": "coreano pastel, suave e claro, estilo kpop",
+"extra": "korean pastel soft aesthetic, bright hazy, kpop, b612, snow app, meitu, lemon8, asian selfie app filter",
+"extra_es": "coreano pastel, suave y brillante, estilo kpop, b612, snow, meitu, lemon8, filtro de app asiática de selfies",
+"extra_pt": "coreano pastel, suave e claro, estilo kpop, b612, snow, meitu, lemon8, filtro de app asiático de selfies",
 "id": "lut347"
 },
 {
@@ -7500,9 +7512,9 @@
 0.0293
 ],
 "made": "Coqueta (estilo)",
-"extra": "japanese airy film, bright cool soft, nihon style",
-"extra_es": "japonés claro y aireado, frío y suave, estilo japonés",
-"extra_pt": "japonês claro e arejado, frio e suave, estilo japonês",
+"extra": "japanese airy film, bright cool soft, nihon style, b612, snow app, soft japanese selfie app",
+"extra_es": "japonés claro y aireado, frío y suave, estilo japonés, b612, snow, app de selfies japonesa suave",
+"extra_pt": "japonês claro e arejado, frio e suave, estilo japonês, b612, snow, app de selfies japonês suave",
 "id": "lut348"
 },
 {
@@ -7550,9 +7562,9 @@
 0.0303
 ],
 "made": "Coqueta (estilo)",
-"extra": "minimal instagram low contrast, ins style, calm muted",
-"extra_es": "minimalista de instagram, poco contraste, estilo ins, calmado",
-"extra_pt": "minimalista do instagram, pouco contraste, estilo ins, calmo",
+"extra": "minimal instagram low contrast, ins style, calm muted, lemon8 lifestyle, minimal feed",
+"extra_es": "minimalista de instagram, poco contraste, estilo ins, calmado, lemon8, estilo de vida, feed minimalista",
+"extra_pt": "minimalista do instagram, pouco contraste, estilo ins, calmo, lemon8, estilo de vida, feed minimalista",
 "id": "lut350"
 },
 {
@@ -7575,9 +7587,9 @@
 -0.0082
 ],
 "made": "Coqueta (estilo)",
-"extra": "rich contrast iphone style, dramatic",
-"extra_es": "contraste rico tipo iphone, dramático",
-"extra_pt": "contraste rico tipo iphone, dramático",
+"extra": "rich contrast iphone style, dramatic, snapseed drama, hdr scape, punchy detail",
+"extra_es": "contraste rico tipo iphone, dramático, snapseed drama, hdr, mucho detalle y fuerza",
+"extra_pt": "contraste rico tipo iphone, dramático, snapseed drama, hdr, muito detalhe e força",
 "id": "lut351"
 },
 {
