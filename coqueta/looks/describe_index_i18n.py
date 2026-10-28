@@ -58,8 +58,10 @@ def tr(desc, kind, lang):
 d = json.load(open(SRC, encoding='utf-8'))
 items = d['items']
 for it in items:
-    it['es'] = tr(it['desc'], it['kind'], 'es')
-    it['pt'] = tr(it['desc'], it['kind'], 'pt')
+    # las palabras de los estilos de redes ya vienen traducidas (extra_es, extra_pt)
+    base, _, extra = it['desc'].partition(' | ')
+    it['es'] = tr(base, it['kind'], 'es') + (' | ' + it['extra_es'] if extra else '')
+    it['pt'] = tr(base, it['kind'], 'pt') + (' | ' + it['extra_pt'] if extra else '')
 M = 'H:/promptribe-modelos/minilm/'
 tok = Tokenizer.from_file(M + 'tokenizer.json')
 so = ort.SessionOptions(); so.log_severity_level = 3

@@ -4,8 +4,8 @@
 import json, numpy as np, onnxruntime as ort
 from tokenizers import Tokenizer
 
-looks = json.load(open('H:/coqueta-studio/looks/looks.json'))
-luts = json.load(open('H:/coqueta-studio/looks/luts.json'))
+looks = json.load(open('H:/coqueta-studio/looks/looks.json', encoding='utf-8'))
+luts = json.load(open('H:/coqueta-studio/looks/luts.json', encoding='utf-8'))
 
 def lut_desc(l):
     m, sd, p02, p98, warm, tint, sat, shr, shg, shb, hir, hig, hib = l['f']
@@ -37,7 +37,8 @@ def lut_desc(l):
     return f"{l['title']}: {kind}, " + ', '.join(w) + ' look' if w else f"{l['title']}: {kind} look"
 
 items = [{'kind': 'look', 'id': L['id'], 'name': L['name'], 'desc': L['desc']} for L in looks]
-items += [{'kind': 'lut', 'id': l['id'], 'name': l['title'], 'desc': lut_desc(l), 'bw': l['bw']} for l in luts]
+# los estilos de redes llevan además sus palabras (en, es, pt): «clean girl», «tumblr», «vsco»…
+items += [{'kind': 'lut', 'id': l['id'], 'name': l['title'], 'desc': lut_desc(l) + (' | ' + l['extra'] if l.get('extra') else ''), 'bw': l['bw'], **({'extra_es': l['extra_es'], 'extra_pt': l['extra_pt']} if l.get('extra') else {})} for l in luts]
 M = 'H:/promptribe-modelos/minilm/'
 tok = Tokenizer.from_file(M + 'tokenizer.json')
 so = ort.SessionOptions(); so.log_severity_level = 3
@@ -53,7 +54,7 @@ V = np.array([emb(it['desc']) for it in items], np.float32)
 scale = float(np.abs(V).max()) / 127
 q = np.clip(np.round(V / scale), -127, 127).astype(np.int8)
 open('H:/coqueta-studio/looks/index.bin', 'wb').write(q.tobytes())
-json.dump({'scale': scale, 'dim': int(V.shape[1]), 'items': items}, open('H:/coqueta-studio/looks/index.json', 'w'), separators=(',', ':'))
+json.dump({'scale': scale, 'dim': int(V.shape[1]), 'items': items}, open('H:/coqueta-studio/looks/index.json', 'w', encoding='utf-8'), separators=(',', ':'))
 print(len(items), 'entradas')
 for it in items[119:126]: print(it['desc'])
 for qtext in ['make it look like a kodak portra photo', 'polaroid instant vintage', 'moody dark teal and orange', 'soft pastel wedding', 'como una foto vieja quemada', 'blanco y negro con mucho contraste', 'vivid summer instagram']:
